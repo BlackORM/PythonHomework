@@ -15,5 +15,7 @@ else:
     sum2 = ticket // 100 % 10 + ticket // 10 % 10 + ticket  % 10
     if (sum1 == sum2):
         print (f'Ваш билет {ticket} счастливый!')
+        print(f'{ticket // 100000}+{ticket // 10000 % 10}+{ticket // 1000 % 10}={sum1} и {ticket // 100 % 10}+{ticket // 10 % 10}+{ticket  % 10}={sum2}')
+
     else:
         print(f'Ваш билет {ticket} не счастливый!')
