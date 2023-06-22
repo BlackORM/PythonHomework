@@ -7,9 +7,14 @@
 s = int(input('Введите сумму натуральных чисел: '))
 p = int(input('Введите произведение натуральных чисел: '))
 
-for x in range(1,s):
+for x in range(1,s-1):
     y = s - x
     if x * y == p:
         break
 if x + y == s and x * y == p:
     print(f'Задуманные числа {x} и {y}!')
+else:
+    print('Нет таких чисел!')
+
+# x = (s - (s ** 2 - 4 * p) ** 0.5) / 2
+# y = s - x
