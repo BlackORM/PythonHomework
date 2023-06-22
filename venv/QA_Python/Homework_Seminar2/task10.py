@@ -9,6 +9,7 @@ coins = ''
 for i in range(1, n+1):
     coin = input(f'Введите {i}-ю монету, решка (0) или герб (1): ')
     while coin != '0' and coin != '1':
+        print('Ошибка! Введите 0 или 1!')
         coin = input(f'Введите {i}-ю монету, решка (0) или герб (1): ')
     coins += coin
     if coin == '1':
