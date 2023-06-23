@@ -7,7 +7,7 @@
 s = int(input('Введите сумму натуральных чисел: '))
 p = int(input('Введите произведение натуральных чисел: '))
 
-for x in range(1,s-1):
+for x in range(1,s):
     y = s - x
     if x * y == p:
         break
