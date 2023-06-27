@@ -39,5 +39,6 @@ word = input('Введите слово: ')
 summ = 0
 for i in word.upper():
     summ += erudit.get(i, 0)
+    print(f'{i} = {erudit.get(i, 0)}')
 
 print(f'Слово "{word}" стоит {summ}')
