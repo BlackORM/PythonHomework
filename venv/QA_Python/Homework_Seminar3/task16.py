@@ -6,13 +6,13 @@
 # 1 2 3 4 5
 # 3
 # -> 1
-n = int(input('Введите количество элементов: '))
+n = int(input('Введите количество элементов массива: '))
 a = []
 for i in range(n):
     a.append(int(input(f'Введите A[{i + 1}] элемент: ')))
 num = int(input('Введите число: '))
 count = 0
-for i in range(n - 1):
+for i in range(n):
     if a[i] == num:
         count += 1
-print(count)
+print(f'Число {num} в массиве {a} встречается {count} раз(а)!')
