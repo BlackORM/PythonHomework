@@ -17,10 +17,11 @@ bush = []
 import random
 for _ in range(n):
     bush.append(random.randint(1,10))
-print(f'Кустов {n}: на них ягод {bush}')
+print(f'Кустов {n}: на них ягод', end = ' ')
+print(*bush)
+
 bush_num = []
 berry = 0
-
 for i in range(n-2):
     if bush[i] + bush[i+1] + bush[i+2] > berry:
         berry = bush[i] + bush[i+1] + bush[i+2]
@@ -31,4 +32,5 @@ if bush[-1] + bush[0] + bush[1] > berry:
 if bush[-2] + bush[-1] + bush[0] > berry:
     berry = bush[-2] + bush[-1] + bush[0]
     bush_num = [1, n-1, n]
-print(f'Максимальное количество ягод {berry} на кустах {bush_num}')
+print(f'Максимальное количество ягод {berry}, на кустах №', end = ' ')
+print(*bush_num)
