@@ -35,10 +35,19 @@ erudit = {'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U': 1, 'L': 1, 'N': 1, 'S': 1, 'T': 1
 'Ж': 5, 'З': 5, 'Х': 5, 'Ц': 5, 'Ч': 5,
 'Ш': 8, 'Э': 8, 'Ю': 8,
 'Ф': 10, 'Щ': 10, 'Ъ': 10}
-word = input('Введите слово: ')
-summ = 0
 for i in word.upper():
     summ += erudit.get(i, 0)
     print(f'{i} = {erudit.get(i, 0)}')
 
 print(f'Слово "{word}" стоит {summ}')
+
+# erudit = {'AEIOULNSTR': 1, 'DG': 2, 'BCMP': 3, 'FHVWY': 4, 'K': 5, 'JX': 8, 'QZ':10,
+# 'АВЕИНОРСТ': 1, 'ДКЛМПУ': 2, 'БГЁЬЯ': 3, 'ЙЫ': 4, 'ЖЗХЦЧ': 5, 'ШЭЮ': 8, 'ФЩЪ': 10}
+# word = input('Введите слово: ')
+# summ = 0
+# for i in word.upper():
+#     for j in erudit:
+#         if i in j:
+#             summ += erudit[j]
+# print(f'Слово "{word}" стоит {summ}')
+
