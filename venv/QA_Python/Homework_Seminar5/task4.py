@@ -12,4 +12,3 @@ for i in range(n):
         max2 = a[i]
 print (f'Первый максимум {max1}, второй максимум {max2}')
 
-# numbers = [random.randint(1, 10) for _ in range(20)]
