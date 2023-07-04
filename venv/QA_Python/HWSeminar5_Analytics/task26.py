@@ -3,3 +3,15 @@
 # помощью рекурсии.
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
+
+def power(x, y):
+    if y == 0:
+        return 1
+    return x * power(x, y - 1)
+
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
+
+result = power(a, b)
+
+print(f'{a} в степени {b} = {result}')
