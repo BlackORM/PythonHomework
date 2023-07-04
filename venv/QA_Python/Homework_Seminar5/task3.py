@@ -10,7 +10,6 @@ for i in range(n):
 print(a)
 
 count = {}
-
 for num in a:
     if num in count:
         count[num] += 1
