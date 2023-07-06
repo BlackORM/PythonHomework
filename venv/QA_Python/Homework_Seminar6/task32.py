@@ -24,5 +24,5 @@ list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 minn = int(input('Введите начало диапазона: '))
 maxx = int(input('Введите конец диапазона: '))
 print(list_1)
-print([i for i in range(len(list_1)) if minn <= list_1[i] <= maxx])
+print(f'Индексы чисел больше {minn} и меньше {maxx}:\n{[i for i in range(len(list_1)) if minn <= list_1[i] <= maxx]}')
 
