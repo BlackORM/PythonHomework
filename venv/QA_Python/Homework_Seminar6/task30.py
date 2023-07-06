@@ -17,7 +17,7 @@ a = int(input('Введите начальное число: '))
 b = int(input('Введите шаг: '))
 c = int(input('Введите количество элементов: '))
 result = []
-for i in range(c):
+for _ in range(c):
     result.append(a)
     a += b
 print(*result)
