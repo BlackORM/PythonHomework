@@ -16,8 +16,14 @@
 a = int(input('Введите начальное число: '))
 b = int(input('Введите шаг: '))
 c = int(input('Введите количество элементов: '))
-result = []
-for _ in range(c):
-    result.append(a)
-    a += b
-print(*result)
+print(*[a + (i - 1) * b for i in range(1, c+1)])
+
+
+# a = int(input('Введите начальное число: '))
+# b = int(input('Введите шаг: '))
+# c = int(input('Введите количество элементов: '))
+# result = []
+# for _ in range(c):
+#     result.append(a)
+#     a += b
+# print(*result)
