@@ -11,20 +11,23 @@
 
 stroka = input('Введите строку: ')
 
-count = 1
+count = 0
 new_stroka = ''
 prev = ''
 
-for letter in stroka:
-    if letter != prev:
-        if prev:
-            new_stroka += str(count) + prev
-        count = 1
-        prev = letter
-    else:
-        count += 1
+if len(stroka) <= 1:
+    new_stroka = stroka
 else:
-    new_stroka += str(count) + prev
+    for letter in stroka:
+        if letter != prev:
+            if prev:
+                new_stroka += str(count) + prev
+            count = 1
+            prev = letter
+        else:
+            count += 1
+    else:
+        new_stroka += str(count) + prev
 
 print('Закодированная строка: ' + new_stroka)
 
