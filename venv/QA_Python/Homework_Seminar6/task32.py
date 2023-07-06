@@ -7,17 +7,22 @@
 # 0, -5, -5, 7]
 # Вывод: [1, 9, 13, 14, 19]
 
-import random
-n = int(input('Введите количество элементов последовательности: '))
+# import random
+# n = int(input('Введите количество элементов последовательности: '))
+# minn = int(input('Введите начало диапазона: '))
+# maxx = int(input('Введите конец диапазона: '))
+# list_1 = []
+# list_2 = []
+# for i in range(n):
+#     list_1.append(random.randint(-50, 50))
+#     if minn <= list_1[i] <= maxx:
+#         list_2.append(i)
+# print(list_1)
+# print(list_2)
+
+list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 minn = int(input('Введите начало диапазона: '))
 maxx = int(input('Введите конец диапазона: '))
-list_1 = []
-list_2 = []
-for i in range(n):
-    list_1.append(random.randint(-50, 50))
-    if minn <= list_1[i] <= maxx:
-        list_2.append(i)
 print(list_1)
-print(list_2)
-
+print([i for i in range(len(list_1)) if minn <= list_1[i] <= maxx])
 
